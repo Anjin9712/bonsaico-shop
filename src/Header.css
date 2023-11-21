@@ -51,6 +51,7 @@
     top: 0;
     left: 0;
     transform: scale(0);
+    z-index: 100;
 }
 
 #modalContainer.active {
@@ -75,7 +76,7 @@
 
 .modal-background {
     height: 100%;
-    padding: 1rem;
+    padding: 2rem 0 2rem 0;
 }
 
 .active .modal-background {
@@ -110,9 +111,9 @@
 .modalSearch {
     height: 100%;
     margin: auto 0 auto auto;
-    width: 28%;
+    width: 25%;
     border: none;
-    border-radius: 25px;
+    border-radius: 25px 0 0 25px;
     padding: 2rem;
 }
 
@@ -126,7 +127,7 @@
 
 .active.out .modalSearch {
     background-color: white;
-    animation: goAway .5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation: quickHideRight .5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 @keyframes modalFadeIn {
@@ -147,15 +148,17 @@
     }
 }
 
-@keyframes goAway {
+@keyframes quickHideRight {
     0% {
         transform: translateX(0);
+        scale:1;
         opacity: 1;
     }
 
     100% {
         transform: translateX(600px);
         opacity: 0;
+        scale:.95;
     }
 }
 
@@ -274,8 +277,8 @@ nav ul {
 
 nav li {
     width: min-content;
-    margin: 0 1.5rem;
-    padding: 0;
+    margin: 0;
+    padding: 0 1.5rem;
     text-align: center;
     transition: 0.15s;
 }
