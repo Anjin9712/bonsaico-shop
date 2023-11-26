@@ -1,18 +1,30 @@
+#categories-container {
+    margin-top: 4rem;
+    box-sizing: border-box;
+}
+
 #categories-title {
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 5rem;
+    width: min(90%, 1400px);
+    height: 8rem;
+    margin: auto;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2rem;
 }
 
 .categories {
     display: flex;
     padding: 0.5rem;
-    width: min(95%, 1500px);
+    width: min(90%, 1400px);
     height: min(890px, 90vh);
-    margin: 2rem auto;
+    margin: auto;
+    margin-top: -1.5rem;
 }
 
 .categories .col1 {
+    margin: 0 0.5rem;
     display: grid;
     width: 65%;
     grid-template-columns: repeat(2, 1fr);
@@ -20,18 +32,41 @@
 }
 
 .categories .col2 {
+    margin: 0 0.5rem;
     width: 35%;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.categories div {
+.categories .category {
+    display: flex;
+    flex-direction: column-reverse;
     margin: .5rem;
     border-radius: 25px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: .15s;
+}
+
+.categories .category:hover {
+    position: relative;
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 0px 5px 10px gray;
+}
+
+.categories h3 {
+    margin: 0;
+    padding: 2rem;
+    color: rgb(255, 240, 189);
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: italic;
+    background-image: linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.7));
+    border-radius: 0 0 25px 25px;
+    transition: .3s;
 }
 
 #christmasImg {
@@ -48,19 +83,18 @@
 
 #designImg {
     width: 100%;
+    grid-column: 2/3;
     background-image: url(./assets/diseno.jpg);
 }
 
 #mantasImg {
     width: 100%;
     height: 30%;
-    grid-column: 3/4;
     background-image: url(./assets/mantas.jpg);
 }
 
 #bohoImg {
     width: 100%;
     height: 70%;
-    grid-column: 3/4;
     background-image: url(./assets/boho.jpg);
 }

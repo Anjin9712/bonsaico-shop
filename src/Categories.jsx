@@ -7,21 +7,30 @@ import design from './assets/diseno.jpg'
 
 export default function Categories() {
     return(
-        <>
-            <h2 id='categories-title'>Inspirate y renueva tu hogar</h2>
+        <div id='categories-container'>
+
+            <h2 id='categories-title'>Inspirate y renueva tu hogar </h2>
             <div className='categories'>
                 <div className='col1'>
-                    <div id='christmasImg'>
-
+                    <div className='category' id='christmasImg'>
+                        <h3>Cojines Navidenos</h3>
                     </div>
-                    <div id='basicoImg'></div>
-                    <div id='designImg'></div>
+                    <div className='category' id='basicoImg'>
+                        <h3>Cojines Basicos</h3>
+                    </div>
+                    <div className='category' id='designImg'>
+                        <h3>Cojines Diseno</h3>
+                    </div>
                 </div>
                 <div className='col2'>
-                    <div id='mantasImg'></div>
-                    <div id='bohoImg'></div>
+                    <div className='category' id='mantasImg'>
+                        <h3>Mantas</h3>
+                    </div>
+                    <div className='category' id='bohoImg'>
+                        <h3>Cojines Boho</h3>
+                    </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 } 

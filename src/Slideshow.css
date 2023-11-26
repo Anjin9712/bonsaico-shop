@@ -1,7 +1,7 @@
 #slideShowContainer {
     background-color: lightgray;
     height: min(700px, 65%);
-    margin-top: 0;
+    margin: 0;
 }
 
 .slide-background {
@@ -9,11 +9,13 @@
     background-size: 110%;
     background-position: 100% 90%;
     background-repeat: no-repeat;
+    margin: 0;
 }
 
 .slide {
     position: absolute;
     transform: scale(0);
+    margin: 0;
 }
 
 .slide-content {
