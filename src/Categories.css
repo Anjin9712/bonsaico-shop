@@ -1,0 +1,66 @@
+#categories-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.categories {
+    display: flex;
+    padding: 0.5rem;
+    width: min(95%, 1500px);
+    height: min(890px, 90vh);
+    margin: 2rem auto;
+}
+
+.categories .col1 {
+    display: grid;
+    width: 65%;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+
+.categories .col2 {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.categories div {
+    margin: .5rem;
+    border-radius: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#christmasImg {
+    width: 100%;
+    grid-column: 1/3;
+    background-image: url(./assets/navidad.jpg);
+}
+
+#basicoImg {
+    width: 95%;
+    grid-column: 1/2;
+    background-image: url(./assets/basico.jpg);
+}
+
+#designImg {
+    width: 100%;
+    background-image: url(./assets/diseno.jpg);
+}
+
+#mantasImg {
+    width: 100%;
+    height: 30%;
+    grid-column: 3/4;
+    background-image: url(./assets/mantas.jpg);
+}
+
+#bohoImg {
+    width: 100%;
+    height: 70%;
+    grid-column: 3/4;
+    background-image: url(./assets/boho.jpg);
+}

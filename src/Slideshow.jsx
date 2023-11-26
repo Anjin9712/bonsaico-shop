@@ -74,7 +74,7 @@ export default function Slideshow() {
                     slides.map((slide, index) => {
                         return <div id={`slide${index}`} key={`slide${index}`}className="slide">
                                 <div className="slide-background" style={{
-                                    backgroundImage: `linear-gradient(rgba(0,0,0,.4), rgba(0,0,0, .5)), url('${slide['background-image']}')`
+                                    backgroundImage: `linear-gradient(rgba(0,0,0,.2), rgba(0,0,0, .3)), url('${slide['background-image']}')`
                                 }}></div>
                                 <div className="slide-content">
                                         <h2>{slide.h2}</h2>
